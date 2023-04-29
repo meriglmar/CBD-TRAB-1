@@ -1,6 +1,8 @@
 package com.example.cbd_trab_1;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -43,19 +45,8 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
 
         fab = findViewById(R.id.fab);
 
- //       ToDoModel task = new ToDoModel();
- //       task.setTask("Esto es una task de prueba.");
- //       task.setStatus(0);
- //       task.setId(1);
-
- //       taskList.add(task);
- //       taskList.add(task);
- //       taskList.add(task);
- //       taskList.add(task);
- //       taskList.add(task);
-
-
- //       tasksAdapter.setTasks(taskList);
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
+        itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
 
         taskList = db.getAllTasks();
         Collections.reverse(taskList);
