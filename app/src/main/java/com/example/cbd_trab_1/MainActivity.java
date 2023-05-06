@@ -10,7 +10,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.cbd_trab_1.Adapter.ToDoAdapter;
+import com.example.cbd_trab_1.Adapters.ToDoAdapter;
 import com.example.cbd_trab_1.Model.ToDoModel;
 import com.example.cbd_trab_1.Utils.DatabaseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
