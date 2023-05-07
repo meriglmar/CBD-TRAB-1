@@ -31,7 +31,8 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="32dp"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:src="@drawable/baseline_add_24"/>
+        android:src="@drawable/baseline_add_24"
+        android:contentDescription="Add new task" />
 
 
 </RelativeLayout>
