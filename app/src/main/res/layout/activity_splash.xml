@@ -3,13 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_dark">
+    android:background="#FFFFFF">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/todo_app_icon"
-        android:layout_centerInParent="true"/>
+        android:translationY="-50px" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:text="TO-DO APP"
+        android:textColor="#3E56B6"
+        android:textStyle="bold|italic"
+        android:translationY="300px" />
 
 
 </RelativeLayout>
